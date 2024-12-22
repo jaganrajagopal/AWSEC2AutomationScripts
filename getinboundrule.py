@@ -3,7 +3,7 @@ import csv
 
 # Replace with your desired SG Group IDs
 sg_group_ids = ['sg-0e8395d957c1caa7d']  # Example SG IDs
-output_file = 'sg_inbound_rules.csv'
+output_file = 'ibound_Sg_rules.csv'
 
 # Initialize Boto3 EC2 client
 ec2 = boto3.client('ec2')

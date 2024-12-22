@@ -8,7 +8,7 @@ import sys, os
 ec2_client = boto3.client('ec2', region_name='us-east-1')  # Replace 'your-region' with the appropriate AWS region
 
 # Parent Security Group ID
-security_group_id = 'sg-03e150145536fe369'  # Replace with your security group ID
+security_group_id = 'sg-0e8395d957c1caa7d'  # Replace with your security group ID
 
 # Calculate the time range for the last two days
 end_time = datetime.utcnow()
@@ -80,7 +80,7 @@ def get_security_group_changes():
 
 # Function to write changes to a CSV file
 def write_to_csv(changes):
-    csv_file = 'security_group_changes.csv'
+    csv_file = 'outbound_rules_sg.csv'
 
     with open(csv_file, mode='w', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=['EventTime', 'EventName', 'Details'])

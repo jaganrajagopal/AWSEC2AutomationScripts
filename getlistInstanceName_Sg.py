@@ -8,7 +8,7 @@ import argparse
 #sg_group_ids = sg_ids ; #  ['sg-0123456789abcdef0']  # Example Security Group IDs
 
 output_file = 'ec2_instance_sg_details.csv'
-aws_regions = ['us-east-1', 'us-west-2']  # List of AWS regions to search
+aws_regions = ['us-east-1']  # List of AWS regions to search
 
 
 def get_arguments():
