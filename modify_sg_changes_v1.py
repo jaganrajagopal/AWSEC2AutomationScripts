@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 # AWS configuration
 aws_region = "us-east-1"  # Update with your AWS region
-parent_sg_ids = ["sg-081eaa2ddb056954c"]  # Replace with your parent security group IDs
+parent_sg_ids = ["sg-081eaa2ddb056954c","sg-03dc1e65602297291"]  # Replace with your parent security group IDs
 output_csv = "Modify_security_group_changes.csv"
 
 # Initialize boto3 clients
